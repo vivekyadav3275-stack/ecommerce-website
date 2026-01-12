@@ -1,0 +1,19 @@
+.grid{
+ display:flex;
+ gap:20px;
+ padding:20px;
+}
+
+.card{
+ width:200px;
+ border:1px solid #ddd;
+ padding:10px;
+}
+
+.login{
+ width:300px;
+ margin:auto;
+ display:flex;
+ flex-direction:column;
+ gap:10px;
+}
