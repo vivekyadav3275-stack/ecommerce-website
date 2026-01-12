@@ -1,0 +1,71 @@
+.login-page{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#f3f3f3;
+}
+
+.login-box{
+  width:350px;
+  background:white;
+  padding:25px;
+  border-radius:8px;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.login-box h2{
+  margin-bottom:15px;
+}
+
+.login-box label{
+  font-size:14px;
+  font-weight:600;
+}
+
+.login-box input{
+  width:100%;
+  padding:8px;
+  margin:8px 0 15px;
+  border:1px solid #ccc;
+  border-radius:4px;
+}
+
+.login-btn{
+  width:100%;
+  background:#f0c14b;
+  border:none;
+  padding:10px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.forgot{
+  color:#007185;
+  font-size:13px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.google-btn{
+  width:100%;
+  background:white;
+  border:1px solid #ccc;
+  padding:10px;
+  margin-top:15px;
+  cursor:pointer;
+}
+
+.new{
+  text-align:center;
+  font-size:13px;
+  margin:15px 0;
+}
+
+.create-btn{
+  width:100%;
+  padding:10px;
+  border:1px solid #ccc;
+  background:white;
+  cursor:pointer;
+}
