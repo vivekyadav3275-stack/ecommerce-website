@@ -1,15 +1,12 @@
-import { useContext } from "react";
-import { Navigate } from "react-router-dom";
-import { AuthContext } from "../context/AuthContext";
+import { Navigate, Outlet } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
+import Spinner from './Spinner';
 
-function AdminRoute({ children }) {
-  const { user } = useContext(AuthContext);
+export default function AdminRoute() {
+  const { user, initialized, isAdmin } = useAuth();
 
-  if (!user || user.role !== "admin") {
-    return <Navigate to="/" />;
-  }
-
-  return children;
+  if (!initialized) return <div className="flex justify-center items-center min-h-64"><Spinner /></div>;
+  if (!user) return <Navigate to="/login" replace />;
+  if (!isAdmin) return <Navigate to="/" replace />;
+  return <Outlet />;
 }
-
-export default AdminRoute;
